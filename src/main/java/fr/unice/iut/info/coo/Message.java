@@ -1,12 +1,13 @@
 package fr.unice.iut.info.coo;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by Virgile on 22/09/2017.
  * TU VOLES TU PAIES
  */
-public class Message {
+public class Message implements Serializable {
 
     private String content;
     private Date createdAt;

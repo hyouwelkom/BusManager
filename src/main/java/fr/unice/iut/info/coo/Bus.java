@@ -1,5 +1,6 @@
 package fr.unice.iut.info.coo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -8,7 +9,7 @@ import java.util.HashMap;
  * Created by Virgile on 22/09/2017.
  * TU VOLES TU PAIES
  */
-public class Bus {
+public class Bus implements Serializable {
 
     final private String name;
     final private HashMap<String, Box> BoxMap;
@@ -26,6 +27,10 @@ public class Bus {
 
     public Collection<Box> getAllBox() {
         return this.BoxMap.values();
+    }
+
+    public String getName() {
+        return this.name;
     }
 
 

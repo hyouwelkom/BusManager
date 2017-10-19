@@ -1,12 +1,13 @@
 package fr.unice.iut.info.coo;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  * Created by Virgile on 22/09/2017.
  * TU VOLES TU PAIES
  */
-public class Box {
+public class Box implements Serializable {
 
     private String name;
     private ArrayList<Message> MsgBox;
